@@ -1,0 +1,78 @@
+html, body, .content {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #002938 0%, #4c00ff 100%);
+}
+
+.content {
+  margin: 1%;
+  margin-top: 0.1%;
+}
+
+.content_text {
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+  width: 90%;
+}
+
+.out_text {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.output {
+  background-color: darkslateblue;
+  color: lightcyan;
+  padding: 5px;
+  width: 95%;
+  min-height: 15%;
+  border: 2px solid black;
+  white-space: pre-line;
+}
+
+
+
+
+
+.editor {
+  min-height: 50%;
+  min-width: 95%;
+  display: inline-flex;
+  gap: 10px;
+  font-family: monospace;
+  line-height: 21px;
+  background-color: darkslategray;
+  border-radius: 2px;
+  padding: 20px 10px;
+}
+
+.line-numbers {
+  width: 20px;
+  text-align: right;
+}
+
+.line-numbers span {
+  counter-increment:  linenumber;
+}
+
+.line-numbers span::before {
+  content: counter(linenumber);
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  line-height: 21px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  resize: none;
+  background-color: darkslategray;
+  font-weight: 300;
+  color: lightblue;
+}
